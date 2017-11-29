@@ -23,7 +23,7 @@ The goal of powers is to make it easier to calculate power functions.
 You can install powers from github with:
 ```{r}
 # install.packages("devtools")
-devtools::install_github("bcahn7/STAT547M-hw-An-Byeongchan/powers")
+devtools::install_github("bcahn7/STAT547M-hw09-An-Byeongchan/powers")
 ```
 
 
@@ -34,7 +34,11 @@ This is a basic example which shows you how to solve a common problem:
 ```{r example}
 ## basic example code
 powers::cube(3)
+powers::reciprocal(1:5)
 ```
 
 ## For Developers
-Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, and `reciprocal`.
+Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, `four`, and `reciprocal`.
+
+## Report my progress
+- It would be useful to build my own R package to customize for more efficient work. 
