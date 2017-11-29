@@ -30,12 +30,21 @@ powers::reciprocal(1:5)
 #> [1] 1.0000000 0.5000000 0.3333333 0.2500000 0.2000000
 ```
 
+It has additional function to print out a scatter plot! Default value for the argument `plot_it` is `FALSE`.
+
+``` r
+## printing out a scatter plot!
+powers::square(1:5, plot_it = TRUE)
+```
+
+![](README-unnamed-chunk-3-1.png)
+
+    #> [1]  1  4  9 16 25
+    powers::reciprocal(1:10, plot_it = TRUE)
+    #>  [1] 1.0000000 0.5000000 0.3333333 0.2500000 0.2000000 0.1666667 0.1428571
+    #>  [8] 0.1250000 0.1111111 0.1000000
+
 For Developers
 --------------
 
 Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, `four`, and `reciprocal`.
-
-Report my progress
-------------------
-
--   It would be useful to build my own R package to customize for more efficient work.
