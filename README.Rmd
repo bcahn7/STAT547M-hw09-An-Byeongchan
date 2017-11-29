@@ -1,0 +1,40 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# powers
+
+This is an R package that provides power functions.
+The goal of powers is to make it easier to calculate power functions.
+
+## Installation
+You can install powers from github with:
+```{r}
+# install.packages("devtools")
+devtools::install_github("bcahn7/STAT547M-hw-An-Byeongchan/powers")
+```
+
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+## basic example code
+powers::cube(3)
+```
+
+## For Developers
+Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, and `reciprocal`.
