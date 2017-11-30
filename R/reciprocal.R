@@ -22,4 +22,4 @@
 #' reciprocal(1:10)
 #' reciprocal(-5)
 #' @export
-reciprocal <- function(x, plot_it = FALSE) 1/x
+reciprocal <- function(x, plot_it = FALSE) pow(x, a=-1, plot_it)

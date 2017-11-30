@@ -11,7 +11,7 @@ You can install powers from github with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("bcahn7/STAT547M-hw09-An-Byeongchan/powers")
+devtools::install_github("bcahn7/STAT547M-hw09-An-Byeongchan/STAT547M-hw09-powers")
 #> Downloading GitHub repo bcahn7/STAT547M-hw09-An-Byeongchan@master
 #> from URL https://api.github.com/repos/bcahn7/STAT547M-hw09-An-Byeongchan/zipball/master
 #> Installation failed: Does not appear to be an R package (no DESCRIPTION)
@@ -41,6 +41,9 @@ powers::square(1:5, plot_it = TRUE)
 
     #> [1]  1  4  9 16 25
     powers::reciprocal(1:10, plot_it = TRUE)
+
+![](README-unnamed-chunk-3-2.png)
+
     #>  [1] 1.0000000 0.5000000 0.3333333 0.2500000 0.2000000 0.1666667 0.1428571
     #>  [8] 0.1250000 0.1111111 0.1000000
 

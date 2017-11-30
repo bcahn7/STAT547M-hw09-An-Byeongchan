@@ -23,7 +23,7 @@ The goal of powers is to make it easier to calculate power functions.
 You can install powers from github with:
 ```{r}
 # install.packages("devtools")
-devtools::install_github("bcahn7/STAT547M-hw09-An-Byeongchan/powers")
+devtools::install_github("bcahn7/STAT547M-hw09-An-Byeongchan/STAT547M-hw09-powers")
 ```
 
 
