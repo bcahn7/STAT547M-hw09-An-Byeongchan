@@ -14,10 +14,16 @@ You can install powers from github with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("bcahn7/STAT547M-hw09-An-Byeongchan/STAT547M-hw09-powers")
-#> Downloading GitHub repo bcahn7/STAT547M-hw09-An-Byeongchan@master
-#> from URL https://api.github.com/repos/bcahn7/STAT547M-hw09-An-Byeongchan/zipball/master
-#> Installation failed: Does not appear to be an R package (no DESCRIPTION)
+devtools::install_github("bcahn7/STAT547M-hw09-powers")
+#> Downloading GitHub repo bcahn7/STAT547M-hw09-powers@master
+#> from URL https://api.github.com/repos/bcahn7/STAT547M-hw09-powers/zipball/master
+#> Installing powers
+#> "C:/PROGRA~1/R/R-34~1.1/bin/x64/R" --no-site-file --no-environ --no-save  \
+#>   --no-restore --quiet CMD INSTALL  \
+#>   "C:/Users/Byeongchan/AppData/Local/Temp/RtmpIJmNxq/devtools29c477225ce0/bcahn7-STAT547M-hw09-powers-e0009a7"  \
+#>   --library="C:/Users/Byeongchan/Documents/R/win-library/3.4"  \
+#>   --install-tests
+#> 
 ```
 
 Example
