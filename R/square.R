@@ -22,4 +22,7 @@
 #' square(1:10)
 #' square(-5)
 #' @export
-square <- function(x, plot_it = FALSE) pow(x, a=2, plot_it)
+square <- function(x, plot_it = FALSE, na.omit = FALSE){
+  if(na.omit) x <- x[!is.na(x)]
+  pow(x, a=2, plot_it)
+}

@@ -4,7 +4,7 @@
 \alias{four}
 \title{Calculate input to the fourth power (vector)}
 \usage{
-four(x, plot_it = FALSE)
+four(x, plot_it = FALSE, na.omit = FALSE)
 }
 \arguments{
 \item{x}{The vector to be multiplied by its cube.}

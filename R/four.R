@@ -22,4 +22,7 @@
 #' four(1:10)
 #' four(-5)
 #' @export
-four <- function(x, plot_it = FALSE) pow(x, a=4, plot_it)
+four <- function(x, plot_it = FALSE, na.omit = FALSE){
+  if(na.omit) x <- x[!is.na(x)]
+  pow(x, a=4, plot_it)
+}

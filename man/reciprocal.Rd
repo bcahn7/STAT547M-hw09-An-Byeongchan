@@ -4,7 +4,7 @@
 \alias{reciprocal}
 \title{Calculate the inverse (reciprocal) of a vector}
 \usage{
-reciprocal(x, plot_it = FALSE)
+reciprocal(x, plot_it = FALSE, na.omit = FALSE)
 }
 \arguments{
 \item{x}{The vector to be inversed.}

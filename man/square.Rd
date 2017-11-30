@@ -4,7 +4,7 @@
 \alias{square}
 \title{Square a vector}
 \usage{
-square(x, plot_it = FALSE)
+square(x, plot_it = FALSE, na.omit = FALSE)
 }
 \arguments{
 \item{x}{The vector to be squared.}

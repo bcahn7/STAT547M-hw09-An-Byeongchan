@@ -22,4 +22,7 @@
 #' reciprocal(1:10)
 #' reciprocal(-5)
 #' @export
-reciprocal <- function(x, plot_it = FALSE) pow(x, a=-1, plot_it)
+reciprocal <- function(x, plot_it = FALSE, na.omit = FALSE){
+  if(na.omit) x <- x[!is.na(x)]
+  pow(x, a=(-1), plot_it)
+}

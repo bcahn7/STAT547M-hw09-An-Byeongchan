@@ -22,4 +22,7 @@
 #' cube(1:10)
 #' cube(-5)
 #' @export
-cube <- function(x, plot_it = FALSE) pow(x, a=3, plot_it)
+cube <- function(x, plot_it = FALSE, na.omit = FALSE){
+  if(na.omit) x <- x[!is.na(x)]
+  pow(x, a=3, plot_it)
+}

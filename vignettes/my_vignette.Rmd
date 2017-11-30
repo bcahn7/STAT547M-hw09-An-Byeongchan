@@ -31,15 +31,31 @@ lapply(my_list, function(x) x^2)
 ## Use powers instead!
 lapply(my_list, square)
 ```
-It has additional function to print out a scatter plot! Default value for the argument `plot_it` is `FALSE`.
+It has additional function to print out a scatter plot! The default value for the argument `plot_it` is `FALSE`.
 ```{r}
 reciprocal(1:10, plot_it = TRUE)
+square(1:10, plot_it = TRUE)
 ```
-
-
-
-
-
+In addition, it has an argument for `na.omit`. This is an option to remove `NA`s from an input vector. The default value is `FALSE`.
+```{r}
+cube(c(1,2,3, NA, 5, 6, NA, 8), plot_it = FALSE, na.omit = TRUE)
+four(c(1,2,3, NA, NA ,NA), na.omit = TRUE)
+```
+  
+   
+This `powers` package also has a `boxcoxt` function which print out the one-parameter Box-Cox transformation.     
+This function does not calculate the optimal lambda value. Using `boxcox()` in the `MASS` package is recommended for the optimal lambda. The default value of lambda is 0.1
+```{r}
+boxcoxt(1:10, lambda = 0.3)
+```
+  
+  
+  
+For convenience, there are two datasets in `powers` package. Those datasets are `1:10`, `-(1:10)`
+```{r}
+tenvec
+negtenvec
+```
 
 
 

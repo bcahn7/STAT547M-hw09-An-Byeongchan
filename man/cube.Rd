@@ -4,7 +4,7 @@
 \alias{cube}
 \title{Cube a vector}
 \usage{
-cube(x, plot_it = FALSE)
+cube(x, plot_it = FALSE, na.omit = FALSE)
 }
 \arguments{
 \item{x}{The vector to be cubed.}
