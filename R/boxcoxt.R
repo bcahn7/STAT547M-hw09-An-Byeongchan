@@ -15,6 +15,7 @@
 #'
 #' @examples
 #' boxcoxt(1:10)
+#' boxcoxt(1:5, lambda = 0.3)
 #'
 #' @export
 boxcoxt <- function(y,  lambda = 0.1){
@@ -23,8 +24,12 @@ boxcoxt <- function(y,  lambda = 0.1){
   else{
     if (lambda ==0)
       T_y <-  log(y)
-    else
+    else if(lambda >= -5 && lambda <= 5)
       T_y <- ((y)^lambda - 1) / lambda
+    else{
+      warning("The input lambda value is too big or too small")
+      T_y <- ((y)^lambda - 1) / lambda
+    }
   }
   return (T_y)
 }

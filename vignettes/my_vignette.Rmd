@@ -48,8 +48,12 @@ This function does not calculate the optimal lambda value. Using `boxcox()` in t
 ```{r}
 boxcoxt(1:10, lambda = 0.3)
 ```
+When the input lambda is too big(>5) or too small(<-5), there's a `warning`: "The input lambda value is too big or too small".
+```{r}
+boxcoxt(1:10, lambda = 9)
+```
   
-  
+   
   
 For convenience, there are two datasets in `powers` package. Those datasets are `1:10`, `-(1:10)`
 ```{r}

@@ -15,15 +15,8 @@ You can install powers from github with:
 ``` r
 # install.packages("devtools")
 devtools::install_github("bcahn7/STAT547M-hw09-powers")
-#> Downloading GitHub repo bcahn7/STAT547M-hw09-powers@master
-#> from URL https://api.github.com/repos/bcahn7/STAT547M-hw09-powers/zipball/master
-#> Installing powers
-#> "C:/PROGRA~1/R/R-34~1.1/bin/x64/R" --no-site-file --no-environ --no-save  \
-#>   --no-restore --quiet CMD INSTALL  \
-#>   "C:/Users/Byeongchan/AppData/Local/Temp/RtmpIJmNxq/devtools29c477225ce0/bcahn7-STAT547M-hw09-powers-e0009a7"  \
-#>   --library="C:/Users/Byeongchan/Documents/R/win-library/3.4"  \
-#>   --install-tests
-#> 
+#> Skipping install of 'powers' from a github remote, the SHA1 (e8955fe1) has not changed since last install.
+#>   Use `force = TRUE` to force installation
 ```
 
 Example
@@ -74,6 +67,14 @@ powers::boxcoxt(5:10)
 powers::boxcoxt(1:10, lambda = 0.3)
 #>  [1] 0.0000000 0.7704814 1.3012972 1.7190552 2.0688553 2.3725662 2.6426332
 #>  [8] 2.8868866 3.1106068 3.3175410
+```
+
+When the input lambda is too big(&gt;5) or too small(&lt;-5), there's a `warning`: "The input lambda value is too big or too small".
+
+``` r
+powers::boxcoxt(1:10, lambda = 9)
+#>  [1] 0.000000e+00 5.677778e+01 2.186889e+03 2.912700e+04 2.170138e+05
+#>  [6] 1.119744e+06 4.483734e+06 1.491308e+07 4.304672e+07 1.111111e+08
 ```
 
 For convenience, there are two datasets in `powers` package. Those datasets are `1:10`, `-(1:10)`

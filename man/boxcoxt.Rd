@@ -24,5 +24,6 @@ All the elements of the input vector should be positive for Box-Cox transformati
 }
 \examples{
 boxcoxt(1:10)
+boxcoxt(1:5, lambda = 0.3)
 
 }
